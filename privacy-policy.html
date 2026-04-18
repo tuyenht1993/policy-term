@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Starlit Studio</title>
+  <meta name="description" content="Privacy Policy for Starlit Studio mobile applications. Learn how we handle your data.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0e1a;
+      --surface: #141828;
+      --surface-bright: #1e2440;
+      --primary: #7ee8fa;
+      --primary-dim: #5bbdcc;
+      --secondary: #ff6e40;
+      --text: #e8eaf6;
+      --text-dim: #9fa8c2;
+      --border: rgba(126,232,250,0.15);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.7;
+    }
+
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .orb-1 { width: 400px; height: 400px; background: rgba(126,232,250,0.05); top: -100px; left: -100px; }
+    .orb-2 { width: 400px; height: 400px; background: rgba(255,110,64,0.04); bottom: -100px; right: -100px; }
+
+    .page-wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Back nav */
+    .back-nav {
+      padding: 24px 0;
+    }
+
+    .back-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-dim);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 10px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      transition: all 0.2s ease;
+    }
+
+    .back-nav a:hover {
+      color: var(--primary);
+      border-color: rgba(126,232,250,0.35);
+    }
+
+    /* Page header */
+    .page-header {
+      padding: 20px 0 40px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 40px;
+    }
+
+    .page-header .badge {
+      display: inline-block;
+      background: rgba(126,232,250,0.1);
+      color: var(--primary);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+
+    .page-header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .page-header .meta {
+      color: var(--text-dim);
+      font-size: 0.85rem;
+    }
+
+    /* Content */
+    .content h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-top: 40px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .content h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-top: 24px;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      color: var(--text-dim);
+      margin-bottom: 14px;
+      font-size: 0.92rem;
+    }
+
+    .content ul {
+      color: var(--text-dim);
+      margin-bottom: 14px;
+      padding-left: 24px;
+      font-size: 0.92rem;
+    }
+
+    .content li {
+      margin-bottom: 6px;
+    }
+
+    .content strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .content a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .content a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--primary);
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin: 20px 0;
+      font-size: 0.9rem;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+    }
+
+    /* Footer */
+    .page-footer {
+      text-align: center;
+      padding: 40px 0 30px;
+      margin-top: 60px;
+      border-top: 1px solid var(--border);
+    }
+
+    .page-footer p {
+      color: var(--text-dim);
+      font-size: 0.8rem;
+    }
+
+    .page-footer a {
+      color: var(--primary-dim);
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .page-header h1 { font-size: 1.5rem; }
+      .content h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <div class="page-wrapper">
+    <nav class="back-nav">
+      <a href="index.html">← Back to Legal Center</a>
+    </nav>
+
+    <header class="page-header">
+      <span class="badge">🔒 Legal Document</span>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective Date: April 15, 2026 &nbsp;·&nbsp; Last Updated: April 15, 2026</p>
+    </header>
+
+    <div class="content">
+
+      <h2>1. Introduction</h2>
+      <p>This Privacy Policy describes how <strong>Starlit Studio</strong> ("we," "us," or "our") collects, uses, and shares information when you use any of our mobile applications (collectively, the "Apps"), including but not limited to <strong>Nut &amp; Bolt: Color Puzzle</strong>.</p>
+      <p>By downloading, installing, or using our Apps, you agree to the collection and use of information in accordance with this policy. If you do not agree, please do not use our Apps.</p>
+
+      <h2>2. Information We Collect</h2>
+
+      <h3>2.1 Information We Do NOT Collect</h3>
+      <p>Our Apps are designed to be <strong>privacy-friendly</strong>. We do not:</p>
+      <ul>
+        <li>Require account registration or login</li>
+        <li>Collect your name, email address, phone number, or any personal identifiers</li>
+        <li>Access your contacts, camera, microphone, or location</li>
+        <li>Store any personal data on our servers</li>
+      </ul>
+
+      <h3>2.2 Information Collected Automatically</h3>
+      <p>Our Apps may automatically collect certain non-personal information to improve your experience:</p>
+      <ul>
+        <li><strong>Device Information:</strong> Device model, operating system version, screen resolution, and language settings</li>
+        <li><strong>App Usage Data:</strong> Game progress, session duration, levels completed, and feature usage (stored locally on your device)</li>
+        <li><strong>Crash Reports:</strong> Technical crash data and error logs to help us fix bugs</li>
+        <li><strong>Advertising Identifiers:</strong> Your device's advertising ID (IDFA on iOS, GAID on Android) for the purpose of serving relevant ads</li>
+      </ul>
+
+      <h3>2.3 Information Collected by Third Parties</h3>
+      <p>Our Apps integrate third-party services that may collect information independently. These services include:</p>
+
+      <div class="highlight-box">
+        <p><strong>📢 Google AdMob</strong> — We use Google AdMob to display advertisements. AdMob may collect device identifiers, IP addresses, and ad interaction data to serve personalized or non-personalized ads. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+      </div>
+
+      <div class="highlight-box">
+        <p><strong>📊 Google Analytics for Firebase</strong> — We may use Firebase Analytics to understand how users interact with our Apps. This includes anonymous usage statistics and aggregated performance data. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.</p>
+      </div>
+
+      <div class="highlight-box">
+        <p><strong>🛡️ Firebase Crashlytics</strong> — We may use Crashlytics to collect crash reports and diagnostic data to improve App stability. This data does not include personal information.</p>
+      </div>
+
+      <h2>3. How We Use Information</h2>
+      <p>The information collected is used to:</p>
+      <ul>
+        <li>Provide and maintain our Apps</li>
+        <li>Display advertisements to support free-to-play games</li>
+        <li>Analyze aggregate usage patterns to improve game design and features</li>
+        <li>Detect, prevent, and address technical issues and crashes</li>
+        <li>Process in-app purchases (handled entirely by Google Play / Apple App Store)</li>
+      </ul>
+
+      <h2>4. Advertising</h2>
+      <p>Our Apps are free-to-play and supported by advertisements. We use <strong>Google AdMob</strong> to serve ads, which may include:</p>
+      <ul>
+        <li><strong>Rewarded Video Ads:</strong> Users voluntarily watch ads to earn in-game rewards</li>
+        <li><strong>Interstitial Ads:</strong> Full-screen ads displayed at natural transition points</li>
+        <li><strong>Banner Ads:</strong> Small advertisements displayed within the app interface</li>
+      </ul>
+      <p>You may opt out of personalized advertising by adjusting your device settings:</p>
+      <ul>
+        <li><strong>Android:</strong> Settings → Google → Ads → Opt out of Ads Personalization</li>
+        <li><strong>iOS:</strong> Settings → Privacy → Tracking → Disable "Allow Apps to Request to Track"</li>
+      </ul>
+
+      <h2>5. Data Storage and Security</h2>
+      <p>Game progress, preferences, and settings are stored <strong>locally on your device</strong> using standard platform storage mechanisms (SharedPreferences / UserDefaults). We do not transmit or store your game data on external servers.</p>
+      <p>We implement reasonable technical measures to protect the data processed by our Apps. However, no method of electronic transmission or storage is 100% secure.</p>
+
+      <h2>6. In-App Purchases</h2>
+      <p>Our Apps may offer in-app purchases. All payment processing is handled directly by the <strong>Apple App Store</strong> or <strong>Google Play Store</strong>. We do not collect, process, or store any payment information (credit card numbers, billing addresses, etc.). Please refer to the respective platform's privacy policy for payment data handling.</p>
+
+      <h2>7. Children's Privacy</h2>
+      <p>Our Apps are intended for a <strong>general audience</strong> and are not directed at children under the age of 13 (or the applicable age in your jurisdiction). We do not knowingly collect personal information from children.</p>
+      <p>If you are a parent or guardian and believe that your child has provided us with personal information, please contact us at <a href="mailto:congacachmang002@gmail.com">congacachmang002@gmail.com</a> and we will take steps to delete such information.</p>
+      <p>For users in the European Economic Area (EEA), we comply with the age requirements under GDPR. For users in the United States, we comply with COPPA regulations.</p>
+
+      <h2>8. Your Rights</h2>
+      <p>Depending on your location, you may have the following rights regarding your data:</p>
+      <ul>
+        <li><strong>Right to Access:</strong> Request information about data collected about you</li>
+        <li><strong>Right to Deletion:</strong> Request deletion of data associated with you</li>
+        <li><strong>Right to Opt-Out:</strong> Opt out of personalized advertising</li>
+        <li><strong>Right to Data Portability:</strong> Request a copy of your data in a structured format</li>
+      </ul>
+      <p>Since our Apps do not collect personal data directly, most of these rights are automatically satisfied. For data collected by third-party services, please contact those service providers directly.</p>
+      <p>To exercise any rights related to our Apps, contact us at <a href="mailto:congacachmang002@gmail.com">congacachmang002@gmail.com</a>.</p>
+
+      <h2>9. International Data Transfers</h2>
+      <p>Third-party ad networks may transfer data internationally. Google AdMob processes data in accordance with the EU-US Data Privacy Framework and applicable Standard Contractual Clauses for international transfers.</p>
+
+      <h2>10. Data Retention</h2>
+      <p>Local game data is retained on your device until you uninstall the App or manually clear the app data. Third-party services retain data according to their own retention policies.</p>
+
+      <h2>11. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. Continued use of the Apps after changes constitutes acceptance of the updated policy.</p>
+
+      <h2>12. Contact Us</h2>
+      <p>If you have any questions or concerns about this Privacy Policy, please contact us:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:congacachmang002@gmail.com">congacachmang002@gmail.com</a></li>
+        <li><strong>Developer:</strong> Starlit Studio</li>
+      </ul>
+
+    </div>
+
+    <footer class="page-footer">
+      <p>&copy; 2024–2026 Starlit Studio. All rights reserved.</p>
+      <p style="margin-top:6px;"><a href="index.html">Legal Center</a> · <a href="terms-of-service.html">Terms of Service</a></p>
+    </footer>
+  </div>
+</body>
+</html>
